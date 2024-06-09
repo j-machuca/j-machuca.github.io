@@ -85,7 +85,7 @@ header {
 }
 
 main {
-  height: calc(90vh - var(--nav-height));
+  height: calc(95vh - var(--nav-height));
 }
 
 .headline {
@@ -135,4 +135,15 @@ main {
   letter-spacing: 0.2rem;
   font-size: 1.6rem;
   max-width: 20rem;
+}
+
+.section--header {
+  color: var(--gray);
+  font-size: 2rem;
+  padding-bottom: 2px;
+}
+
+.header--number {
+  color: var(--neon-glow);
+  font-size: 1.6rem;
 }
