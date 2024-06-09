@@ -1,4 +1,138 @@
+:root {
+  --primary-color: hsl(204, 84%, 10%);
+  --accent-color: hsl(160, 85%, 60%);
+  --secondary-color: hsl(215, 16%, 47%);
+  --gray: hsl(216, 12%, 84%);
+  --nav-height: 4.8rem;
+}
+
+/* Neon Colors */
+
+.neon-green {
+  --neon: hsl(160, 85%, 60%);
+  --neon-glow: hsl(160, 85%, 40%);
+}
+
+@supports (background: color(display-p3 1 1 1)) {
+  @media (dynamic-range: high) {
+    .neon-green {
+      --neon-glow: color(display-p3 0 1 0);
+    }
+  }
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Jetbrains Mono", monospace;
+}
+
+body {
+  background-color: var(--primary-color);
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+header {
+  margin-bottom: 3rem;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: var(--nav-height);
+}
+
+.logo-container {
+  width: 20%;
+}
+
 .navbar-logo {
+  width: 4.8rem;
+  height: 4.8rem;
+}
+
+.hamburger {
   width: 4rem;
-  height: 4rem;
+  height: 0.2rem;
+  background-color: var(--accent-color);
+  border-radius: 2px;
+  position: relative;
+  text-align: right;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  background-color: var(--accent-color);
+  border-radius: 2px;
+  position: absolute;
+  height: 100%;
+}
+
+.hamburger::before {
+  width: 110%;
+
+  top: -1.1rem;
+  right: 0;
+}
+.hamburger::after {
+  width: 90%;
+
+  top: 1.1rem;
+  right: 0;
+}
+
+main {
+  height: calc(90vh - var(--nav-height));
+}
+
+.headline {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  gap: 1.6rem;
+}
+
+.headline--presentation {
+  display: inline-block;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--accent-color);
+}
+
+.headline--name {
+  font-size: 3.6rem;
+  font-weight: bold;
+  color: var(--accent-color);
+  text-shadow: 1px 1px 2px var(--neon), 0 0 1em var(--neon-glow),
+    0 0 0.2em var(--neon-glow);
+}
+
+.bio {
+  color: var(--gray);
+  line-height: 1.5;
+  margin-bottom: 3rem;
+}
+
+.highlight {
+  text-decoration: underline solid var(--neon-glow);
+  font-style: italic;
+}
+
+.roles {
+  color: var(--neon-glow);
+}
+
+.headline--cta {
+  background-color: transparent;
+  color: var(--neon);
+  border: 1px solid var(--neon-glow);
+  padding: 1.6rem 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-size: 1.6rem;
+  max-width: 20rem;
 }
