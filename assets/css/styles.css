@@ -115,6 +115,7 @@ main {
   color: var(--gray);
   line-height: 1.5;
   margin-bottom: 3rem;
+  max-width: 55rem;
 }
 
 .highlight {
