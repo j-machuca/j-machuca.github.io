@@ -142,9 +142,29 @@ main {
   color: var(--gray);
   font-size: 2rem;
   padding-bottom: 2px;
+  position: relative;
+  margin-bottom: 2rem;
+}
+.section--header::after {
+  content: "";
+  min-width: 60%;
+
+  height: 2px;
+  background-color: var(--accent-color);
+  position: absolute;
+  top: 50%;
+  right: 0;
 }
 
 .header--number {
-  color: var(--neon-glow);
+  color: var(--accent-color);
+  font-size: 1.6rem;
+}
+
+.my-story {
+  color: var(--gray);
+  line-height: 1.5;
+  margin-bottom: 3rem;
+  max-width: 55rem;
   font-size: 1.6rem;
 }
