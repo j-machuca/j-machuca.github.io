@@ -29,6 +29,7 @@ html {
 body {
   background-color: var(--primary-color);
   padding: 2rem;
+  min-height: 100dvh;
   min-height: 100vh;
 }
 
