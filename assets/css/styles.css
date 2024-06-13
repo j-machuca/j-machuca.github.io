@@ -284,7 +284,7 @@ main {
   padding-left: 4rem;
   padding-right: 4rem;
 
-  gap: 4rem;
+  gap: 3rem;
 }
 
 .jobs-tabs > button {
@@ -294,10 +294,18 @@ main {
   padding: 0.5rem 1rem;
   color: var(--accent-color);
   border: none;
-  border-bottom: 1px solid var(--accent-color);
   cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.jobs-tabs > button:first-child {
+  margin-left: 8%;
 }
 
 .jobs-tabs > button:last-child {
   margin-right: 25%;
+}
+
+button.active {
+  border-bottom: 2px solid var(--accent-color);
 }
