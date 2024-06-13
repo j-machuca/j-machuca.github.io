@@ -281,11 +281,11 @@ main {
   display: flex;
   overflow: auto;
   width: 100%;
-  padding-bottom: 1.2rem;
+  padding-bottom: 0.5rem;
   padding-left: 4rem;
   padding-right: 4rem;
-
   gap: 3rem;
+  margin-bottom: 1rem;
 }
 
 .jobs-tabs > button {
