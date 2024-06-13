@@ -145,6 +145,11 @@ main {
   position: relative;
   margin-bottom: 2rem;
 }
+
+.about-me {
+  min-height: 100vh;
+}
+
 .section--header::after {
   content: "";
   min-width: 60%;
@@ -167,4 +172,100 @@ main {
   margin-bottom: 3rem;
   max-width: 55rem;
   font-size: 1.6rem;
+}
+
+.react {
+  --neon: hsla(217, 91%, 60%);
+  --neon-glow: hsla(217, 91%, 60%);
+  color: hsla(217, 91%, 60%);
+}
+
+.node-js {
+  --neon: #83cd29;
+  --neon-glow: #83cd29;
+  color: #83cd29;
+}
+
+.javascript {
+  --neon: #f0db4f;
+  --neon-glow: #f0db4f;
+  color: #f0db4f;
+}
+
+.express {
+  --neon: #fefefe;
+  --neon-glow: #ffffff;
+  color: #fefefe;
+}
+
+.python {
+  --neon: #37709f;
+  --neon-glow: #37709f;
+  color: #37709f;
+}
+
+.django {
+  --neon: #2ba977;
+  --neon-glow: #2ba977;
+  color: #2ba977;
+}
+
+.figma {
+  --neon: #fefefe;
+  --neon-glow: #ffffff;
+  color: #fefefe;
+}
+
+.technologies--card-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.technology--card {
+  display: flex;
+  flex-direction: row;
+  flex-basis: 45%;
+  align-items: center;
+  gap: 2rem;
+  border-radius: 0.5rem;
+  border: 2px solid var(--neon);
+  box-shadow: 0 0 10px var(--neon-glow), inset 0 0 10px var(--neon-glow);
+  padding: 1rem 2rem;
+}
+
+.technology--name {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+
+.other-skills--header {
+  text-align: center;
+  font-size: 1.6rem;
+  color: var(--gray);
+  margin-bottom: 1rem;
+}
+
+.other-skills {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.other-skills > li::marker {
+  content: "▹";
+  position: absolute;
+  left: 0px;
+  color: var(--accent-color);
+  font-size: 1.6rem;
+}
+
+.other-skills > li {
+  flex-basis: 50%;
+  font-size: 1.6rem;
+  color: var(--gray);
+  position: relative;
 }
