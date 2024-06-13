@@ -280,9 +280,11 @@ main {
   display: flex;
   overflow: auto;
   width: 100%;
-  padding-bottom: 1rem;
-  /* margin-left: 1.6rem; */
-  gap: 2rem;
+  padding-bottom: 1.2rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+
+  gap: 4rem;
 }
 
 .jobs-tabs > button {
@@ -291,7 +293,9 @@ main {
   background-color: transparent;
   padding: 0.5rem 1rem;
   color: var(--accent-color);
-  border: 1px solid var(--accent-color);
+  border: none;
+  border-bottom: 1px solid var(--accent-color);
+  cursor: pointer;
 }
 
 .jobs-tabs > button:last-child {
