@@ -310,3 +310,55 @@ main {
 button.active {
   border-bottom: 2px solid var(--accent-color);
 }
+
+.project--container {
+  display: flex;
+  flex-direction: column;
+
+  flex-wrap: wrap;
+  row-gap: 2rem;
+}
+
+.project--card {
+  flex-basis: 50%;
+  min-width: 30rem;
+  max-width: 40rem;
+  border: 1px solid var(--accent-color);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  & .name {
+    font-size: 1.6rem;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+  }
+  & .description {
+    font-size: 1.2rem;
+    color: var(--gray);
+
+    margin-bottom: 1rem;
+  }
+
+  & .pill {
+    border: 1px solid var(--accent-color);
+    font-size: 1rem;
+    color: var(--accent-color);
+    border-radius: 1rem;
+    padding: 0.5rem 0.8rem;
+    display: inline-block;
+    margin-right: 0.4rem;
+    margin-bottom: 0.4rem;
+  }
+
+  & .project--links {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    & a {
+      color: var(--accent-color);
+      text-decoration: none;
+    }
+  }
+}
