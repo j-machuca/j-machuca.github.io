@@ -31,6 +31,8 @@ body {
   padding: 2rem;
   min-height: 100dvh;
   min-height: 100vh;
+  max-width: 400px;
+  margin: 0 auto;
 }
 
 header {
